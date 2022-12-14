@@ -1,0 +1,105 @@
+:root{
+    --veryDarkblue : hsl(233, 47%, 7%); /*(main background)*/
+    --darkDesaturatedblue : hsl(244, 38%, 16%);/*(card background)*/
+    --softViolet:hsl(277, 64%, 61%);/*accent*/
+    --white:hsl(0, 0%, 100%);/* (main heading, stats)*/
+    --slightlytransparentWhite : hsla(0, 0%, 100%, 0.75);/*(main paragraph)*/
+    --SlightlytransparentWhite: hsla(0, 0%, 100%, 0.6); /* (stat headings)*/
+    --fontSize-primary:15px;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary:'Lexend Deca', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--veryDarkblue);
+    font-size: var(--fontSize-primary);
+    font-family: var(--font-primary);
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+ 
+    background-color: var(--darkDesaturatedblue);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  
+}
+header .heading-container{
+  padding: 25px;
+}
+header .image {
+    min-height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(155, 81, 197,0.6),rgba(155, 81, 197,0.6)),
+    url("/images/image-header-mobile.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .heading{
+    color: var(--white);  
+    margin-bottom: 20px;
+}
+header .heading>span{
+    color: var(--softViolet);
+}
+header .subheading{
+    color: var(--slightlytransparentWhite);
+    line-height: 2;
+
+}
+header .stats-container{
+    color: var(--SlightlytransparentWhite);
+    font-family: var(--font-secondary);
+   
+    
+}
+header .stats-container h2{
+    color: var(--white);
+    padding: 20px 0 5px;
+}
+header .stats-container p {
+    text-transform: uppercase;
+}
+@media screen and (min-width:950px){
+    
+    main{
+        text-align: left;
+    }
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    header > div {
+        flex: 50%;
+    }
+    header .image{
+        min-height: 400px;
+        width: 100%;
+        background-image: linear-gradient(rgba(155, 81, 197,0.6),rgba(155, 81, 197,0.6)),
+        url("/images/image-header-desktop.jpg") ;
+        background-size: 100% 100%;
+    }
+    header .heading-container{
+        padding: 5% ;
+    }
+    header .stats-container{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+   
+}
