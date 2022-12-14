@@ -43,7 +43,7 @@ header .heading-container{
 header .image {
     min-height: 300px;
     width: 100%;
-    background-image: linear-gradient(rgba(155, 81, 197,0.6),rgba(155, 81, 197,0.6)),
+    background-image: linear-gradient(rgba(109, 10, 170, 0.5),rgba(109, 10, 170, 0.5) ),
     url("/images/image-header-mobile.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ header .stats-container p {
     header .image{
         min-height: 400px;
         width: 100%;
-        background-image: linear-gradient(rgba(155, 81, 197,0.6),rgba(155, 81, 197,0.6)),
+        background-image: linear-gradient(rgba(109, 10, 170, 0.5),rgba(109, 10, 170, 0.5) ),
         url("/images/image-header-desktop.jpg") ;
         background-size: 100% 100%;
     }
